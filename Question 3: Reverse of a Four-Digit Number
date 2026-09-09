@@ -1,0 +1,16 @@
+public class ReverseNumber {
+    public static void main(String[] args) {
+        int number = 7584; // Example 4-digit number
+        int temp = number;
+        int reversed = 0;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+            reversed = reversed * 10 + digit;
+            temp /= 10;
+        }
+
+        System.out.println("Original number: " + number);
+        System.out.println("Reversed number: " + reversed);
+    }
+}
